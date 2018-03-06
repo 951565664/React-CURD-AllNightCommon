@@ -1,0 +1,9 @@
+.uploadCt{
+    overflow: hidden;//upload组件由于float会失去高度
+    width: 720px;    
+    :global(.ant-upload-list-item-info){
+        &:before{
+            // height: 0 !important;
+        }
+    }
+}

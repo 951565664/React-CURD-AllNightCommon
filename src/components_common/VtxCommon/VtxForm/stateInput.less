@@ -1,0 +1,24 @@
+.error{
+    display: inline-block;
+    input{
+        border-color: red;
+    }
+    &:after{
+        content:attr(data-errorMsg);
+        color: red;
+        display: block;
+        font-size: 10px;
+        line-height: 18px;
+    }
+}
+
+.normal{
+    display: inline-block;
+    &:after{
+        content:'.';
+        visibility: hidden;
+        display: block;
+        font-size: 10px;
+        line-height: 18px;
+    }
+}
